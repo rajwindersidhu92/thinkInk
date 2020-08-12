@@ -58,7 +58,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onSignIn:" destination="kZR-1x-TZY" eventType="touchUpInside" id="yav-go-BX0"/>
-                                    <segue destination="gM1-eo-bGj" kind="presentation" id="S8p-dQ-yCZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvE-x1-AQ0">
@@ -205,17 +204,11 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="gM1-eo-bGj" customClass="HomeViewController" customModule="ThinkInk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ejx-Vt-cMa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think InK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dum-P2-l8w">
-                                <rect key="frame" x="102" y="20" width="181" height="48"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5N-Jc-f3H">
-                                <rect key="frame" x="115" y="76" width="184" height="21.5"/>
+                                <rect key="frame" x="115" y="76" width="118" height="21.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Select Tattoo">
                                         <attributes>
@@ -227,19 +220,38 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9ZA-pz-Cm5">
-                                <rect key="frame" x="0.0" y="124.5" width="414" height="663.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Think InK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dum-P2-l8w">
+                                <rect key="frame" x="102" y="44" width="181" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1kR-Jv-Dem">
+                                <rect key="frame" x="20" y="106" width="374" height="757"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewLayout key="collectionViewLayout" id="J5N-8k-qXy"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uWC-nj-gl5">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5dP-gH-CdZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCell" id="HZZ-4W-xOf" customClass="CollectionViewCell" customModule="ThinkInk" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mzP-5W-XDE">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TFu-Ig-hkE">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1qZ-xa-dT4">
+                                                    <rect key="frame" x="8" y="8" width="112" height="112"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="1qZ-xa-dT4" id="uII-C0-WtL"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -248,17 +260,20 @@
                         <constraints>
                             <constraint firstItem="Dum-P2-l8w" firstAttribute="leading" secondItem="a4M-ET-YGl" secondAttribute="leading" constant="102" id="4NG-uG-F6f"/>
                             <constraint firstItem="D5N-Jc-f3H" firstAttribute="top" secondItem="Ejx-Vt-cMa" secondAttribute="top" constant="76" id="Axh-H3-p2Z"/>
-                            <constraint firstItem="a4M-ET-YGl" firstAttribute="trailing" secondItem="9ZA-pz-Cm5" secondAttribute="trailing" id="DGH-N8-13g"/>
                             <constraint firstItem="D5N-Jc-f3H" firstAttribute="leading" secondItem="a4M-ET-YGl" secondAttribute="leading" constant="115" id="GCk-8d-Wg2"/>
-                            <constraint firstItem="9ZA-pz-Cm5" firstAttribute="top" secondItem="D5N-Jc-f3H" secondAttribute="bottom" constant="27" id="IDB-yv-eUz"/>
-                            <constraint firstItem="9ZA-pz-Cm5" firstAttribute="leading" secondItem="Ejx-Vt-cMa" secondAttribute="leading" id="Sx2-St-CYU"/>
-                            <constraint firstItem="D5N-Jc-f3H" firstAttribute="centerX" secondItem="9ZA-pz-Cm5" secondAttribute="centerX" id="W3b-za-OZ2"/>
                             <constraint firstItem="D5N-Jc-f3H" firstAttribute="top" secondItem="Dum-P2-l8w" secondAttribute="bottom" constant="10" id="XDs-Zt-MCG"/>
+                            <constraint firstItem="a4M-ET-YGl" firstAttribute="trailing" secondItem="1kR-Jv-Dem" secondAttribute="trailing" constant="20" id="YGM-as-MdA"/>
+                            <constraint firstItem="1kR-Jv-Dem" firstAttribute="leading" secondItem="a4M-ET-YGl" secondAttribute="leading" constant="20" id="drm-OA-a88"/>
+                            <constraint firstAttribute="bottom" secondItem="1kR-Jv-Dem" secondAttribute="bottom" constant="33" id="gUK-wi-Fmu"/>
                             <constraint firstItem="D5N-Jc-f3H" firstAttribute="top" secondItem="Dum-P2-l8w" secondAttribute="bottom" constant="8" id="gZk-81-VOA"/>
-                            <constraint firstItem="a4M-ET-YGl" firstAttribute="bottom" secondItem="9ZA-pz-Cm5" secondAttribute="bottom" constant="20" id="hYg-Ai-8eD"/>
+                            <constraint firstItem="1kR-Jv-Dem" firstAttribute="top" secondItem="D5N-Jc-f3H" secondAttribute="bottom" constant="8.5" id="zlP-dK-yZP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a4M-ET-YGl"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QLB-XT-n2o"/>
+                    <connections>
+                        <outlet property="collectionView" destination="1kR-Jv-Dem" id="Xcb-0w-sTL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8Y-UJ-5qj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -267,7 +282,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThinkInk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ThinkInk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,18 +296,18 @@
                                     <constraint firstAttribute="height" constant="30" id="Kch-ua-kyP"/>
                                     <constraint firstAttribute="width" constant="46" id="vVl-k9-VdN"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqY-6i-Jxi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhQ-Uo-i2t">
-                                <rect key="frame" x="314" y="751" width="80" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhQ-Uo-i2t">
+                                <rect key="frame" x="307" y="801" width="87" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Vib-u4-tkk"/>
                                     <constraint firstAttribute="width" constant="80" id="yw9-J8-LwR"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="resetSession:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKU-tR-WoG"/>
                                 </connections>

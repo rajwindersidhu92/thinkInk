@@ -48,8 +48,7 @@ class LoginViewController: UIViewController {
                            // Couldn't sign in
                             self.showError("Invalid email or password. Please try again")
                            
-                       }
-                       else {
+                       }else {
                            let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
                            
                            self.view.window?.rootViewController = homeViewController

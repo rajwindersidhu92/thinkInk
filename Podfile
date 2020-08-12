@@ -11,6 +11,7 @@ target 'think2' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
 
   target 'think2Tests' do
     inherit! :search_paths

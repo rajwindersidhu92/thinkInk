@@ -13,6 +13,11 @@
 		0F598BF824E23DE60075A8A2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F598BF724E23DE60075A8A2 /* SignUpViewController.swift */; };
 		0F9F5B8624DC201F00EE43F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F5B8524DC201F00EE43F9 /* LoginViewController.swift */; };
 		0F9F5B8824DC203000EE43F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9F5B8724DC203000EE43F9 /* HomeViewController.swift */; };
+		0FF024A324E3794C00E5E842 /* dragon.dae in Resources */ = {isa = PBXBuildFile; fileRef = 0FF024A224E3794C00E5E842 /* dragon.dae */; };
+		0FF024A524E3795900E5E842 /* snake.dae in Resources */ = {isa = PBXBuildFile; fileRef = 0FF024A424E3795800E5E842 /* snake.dae */; };
+		0FF024A724E3796400E5E842 /* wolf.dae in Resources */ = {isa = PBXBuildFile; fileRef = 0FF024A624E3796400E5E842 /* wolf.dae */; };
+		0FF024A924E3796C00E5E842 /* shark.dae in Resources */ = {isa = PBXBuildFile; fileRef = 0FF024A824E3796C00E5E842 /* shark.dae */; };
+		0FF024AB24E3865B00E5E842 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF024AA24E3865B00E5E842 /* CollectionViewCell.swift */; };
 		49C1D78F3B7475E837D8531B /* Pods_think2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BF6FDBA93108F28EBA5DD5 /* Pods_think2Tests.framework */; };
 		B8C199E8AF60D05686701FC6 /* Pods_think2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5549510510D3352630DCD4E0 /* Pods_think2.framework */; };
 		CC75F89F08E1EA64A75F4EB2 /* Pods_think2_think2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613BDCB69D5EAC15EB79A0C6 /* Pods_think2_think2UITests.framework */; };
@@ -52,6 +57,11 @@
 		0F598BF724E23DE60075A8A2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0F9F5B8524DC201F00EE43F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0F9F5B8724DC203000EE43F9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0FF024A224E3794C00E5E842 /* dragon.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = dragon.dae; sourceTree = "<group>"; };
+		0FF024A424E3795800E5E842 /* snake.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = snake.dae; sourceTree = "<group>"; };
+		0FF024A624E3796400E5E842 /* wolf.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wolf.dae; sourceTree = "<group>"; };
+		0FF024A824E3796C00E5E842 /* shark.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = shark.dae; sourceTree = "<group>"; };
+		0FF024AA24E3865B00E5E842 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		25A6DEEEF26C93FD6F3CE782 /* Pods-think2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-think2.release.xcconfig"; path = "Target Support Files/Pods-think2/Pods-think2.release.xcconfig"; sourceTree = "<group>"; };
 		37038DD2D7C006944669A9A4 /* Pods-think2-think2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-think2-think2UITests.release.xcconfig"; path = "Target Support Files/Pods-think2-think2UITests/Pods-think2-think2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		5549510510D3352630DCD4E0 /* Pods_think2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_think2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +131,11 @@
 				0F9F5B8724DC203000EE43F9 /* HomeViewController.swift */,
 				E971E76624C7969A00A8B416 /* ViewController.swift */,
 				0F598BF724E23DE60075A8A2 /* SignUpViewController.swift */,
+				0FF024A224E3794C00E5E842 /* dragon.dae */,
+				0FF024A424E3795800E5E842 /* snake.dae */,
+				0FF024A624E3796400E5E842 /* wolf.dae */,
+				0FF024A824E3796C00E5E842 /* shark.dae */,
+				0FF024AA24E3865B00E5E842 /* CollectionViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -315,6 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E971E77224C7969D00A8B416 /* LaunchScreen.storyboard in Resources */,
+				0FF024A524E3795900E5E842 /* snake.dae in Resources */,
+				0FF024A924E3796C00E5E842 /* shark.dae in Resources */,
+				0FF024A724E3796400E5E842 /* wolf.dae in Resources */,
+				0FF024A324E3794C00E5E842 /* dragon.dae in Resources */,
 				0F598BEF24DC47F90075A8A2 /* GoogleService-Info.plist in Resources */,
 				E971E76F24C7969D00A8B416 /* Assets.xcassets in Resources */,
 				E971E76A24C7969A00A8B416 /* Main.storyboard in Resources */,
@@ -445,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF024AB24E3865B00E5E842 /* CollectionViewCell.swift in Sources */,
 				0F9F5B8624DC201F00EE43F9 /* LoginViewController.swift in Sources */,
 				E971E76724C7969A00A8B416 /* ViewController.swift in Sources */,
 				0F598BF424DDC5710075A8A2 /* Constants.swift in Sources */,
